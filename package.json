@@ -1,0 +1,25 @@
+{
+  "name": "learning-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeondam88/learning-typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yeondam88/learning-typescript/issues"
+  },
+  "homepage": "https://github.com/yeondam88/learning-typescript#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "ts-node": "^8.2.0",
+    "typescript": "^3.5.1"
+  }
+}
