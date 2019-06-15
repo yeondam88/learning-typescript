@@ -1,6 +1,7 @@
 let apples: number = 5;
 let speed: string = 'fast';
 let hasName: boolean = true;
+
 let nothingMuch: null = null;
 let nothing: undefined = undefined;
 
@@ -24,4 +25,6 @@ let point: { x: number; y: number } = {
 };
 
 // Function
-const logNumber = i => {};
+const logNumber: (i: number) => void = (i: number) => {
+  console.log(i);
+};
