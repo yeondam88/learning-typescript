@@ -5,6 +5,10 @@ interface Vehicle {
   summary(): string;
 }
 
+interface Reportable {
+  summary(): string;
+}
+
 const oldCivic = {
   name: 'Civic',
   year: new Date(),
@@ -26,8 +30,19 @@ const printVehicle = (vehicle: {
 };
 
 // With interface
-const printVehicle_with_interface = (vehicle: Vehicle): void => {
-  console.log(vehicle.summary());
+const printSummary = (item: Reportable): void => {
+  console.log(item.summary());
 };
 
-printVehicle_with_interface(oldCivic);
+printSummary(oldCivic);
+
+const drink = {
+  color: 'brown',
+  carbonated: true,
+  sugar: 40,
+  summary(): string {
+    return `My drink has ${this.sugar} grams of sugar.`;
+  }
+};
+
+printSummary(drink);
