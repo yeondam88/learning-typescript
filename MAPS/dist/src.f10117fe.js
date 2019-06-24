@@ -85163,7 +85163,15 @@ function () {
     this.googleMap = new google.maps.Map(document.getElementById(divId), option);
   }
 
-  CustomMap.prototype.addMarker = function () {};
+  CustomMap.prototype.addMarker = function (mappable) {
+    new google.maps.Marker({
+      map: this.googleMap,
+      position: {
+        lat: mappable.location.lat,
+        lng: mappable.location.lng
+      }
+    });
+  };
 
   return CustomMap;
 }();
