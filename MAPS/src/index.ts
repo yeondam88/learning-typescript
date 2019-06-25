@@ -11,3 +11,6 @@ const customMap = new CustomMap('map', {
     lng: 0
   }
 });
+
+customMap.addMarker(user);
+customMap.addMarker(company);
